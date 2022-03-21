@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BrandonGrant-animation CSS</title>
+    <link rel="stylesheet" href="animation.css">
+  </head>
+  <body>
+    <h2 class="title">Animation using translate</h2>
+    <section class="container">
+      <img class="background" src="images/pp2.jpeg" alt="background
+      image of a mountain" title="Jamaica">
+      <img class="bus" src="images/c.png"
+       alt="moving car">
+      <img src="images/cloud.png"class="mc1" alt="mc 1">
+      <img src="images/cloud.png"class="mc2" alt="mc 2">
+      <img src="images/cloud.png"class="mc3" alt="mc 3">
+
+</section>
+
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+
+
+@keyframes myfirst {
+
+  25%  {left: 200px; top: 0px;}
+
+  100% { left: 0px; top: 0px;}
+}
+</style>
+</head>
+<body>
+
+
+
+
+  </body>
+
+</html>
+----------------------------------------------------
+.title{
+
+background-color: darkblue; color: lightgray;
+text-align: center; padding: 12px;
+}
+
+.container{
+
+width: 60%; margin-left: auto; margin-right: auto;
+border: outset 20px darkgray;
+position: relative;
+}
+
+.background{
+   width: 100%;
+   length:400%;
+}
+
+
+.bus{
+  width: 100px;
+  height: 100px;
+  background:;
+  position: relative;
+  animation: myfirst 12s 2;
+  animation-direction: alternate;
+}
+
+
+@keyframes myfirst {
+
+  25%  {left: 200px; top: 0px;}
+
+  100% {background: ; left: 0px; top: 0px;}
+}
+}.mc1 {
+position: absolute;
+top: 5%;
+left: 0%;
+animation-name: myfirst;
+animation-duration: 3s;
+animation-iteration-count: 3s infinite;
+animation-delay: 7s;
+}
+.mc2 {
+position: absolute;
+width: 50%;
+top: -10%;
+left: -20%;
+animation-name: myfirst;
+animation-duration: 14s;
+animation-iteration-count:10s infinite;
+
+}
+.mc3{
+position: absolute;
+width: 60%;
+top: -6%;
+left: -40%;
+animation-name: myfirst;
+animation-duration: 3s;
+animation-iteration-count:20s infinite;
+}
